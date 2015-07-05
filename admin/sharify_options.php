@@ -33,7 +33,7 @@
 	<h2 class="sharify-logo">Sharify</h2>
 	<!--Sharify main-->
 	<div class="sharify-inner">
-		<header><span class="sharify-logo-main">Sharify</span><span class="sharify-version"><a href="https://wordpress.org/plugins/sharify/changelog/" title="Checkout the changelog!">Verison 2.0</a></span></header>
+		<header><span class="sharify-logo-main">Sharify</span><span class="sharify-version"><a href="https://wordpress.org/plugins/sharify/changelog/" title="Checkout the changelog!">Verison 3.4.4</a></span></header>
 		<div class="sharify-main">
 			<div class="sharify-settings">
 				<!--Button Placement-->
@@ -43,13 +43,11 @@
 					<?php settings_fields('sharify');?>		
 					<div id="general-settings" class="sharify-setting-wrap">
 						<br><label><input class="sharify-input" type="checkbox" name="display_buttons_under_post" value="1" 
-						<?php if ( 1 == get_option('display_buttons_under_post') ) echo 'checked="checked"'; ?> /> Show buttons under all posts</label> <br>
+						<?php if ( 1 == get_option('display_buttons_under_post') ) echo 'checked="checked"'; ?> /> Display Sharify buttons at the bottom of posts</label> <br>
+						<br><label><input class="sharify-input" type="checkbox" name="display_buttons_before_post" value="1" 
+						<?php if ( 1 == get_option('display_buttons_before_post') ) echo 'checked="checked"'; ?> /> Display Sharify buttons at the top of posts</label> <br>
 						<br><label><input type="checkbox" class="sharify-input" name="sharify_use_gfont" value="1" 
 						<?php if ( 1 == get_option('sharify_use_gfont') ) echo 'checked="checked"'; ?> /> Load Google Font?</label><br />
-						<br><label><input class="sharify-input" type="checkbox" name="sharify_cache_counts" value="1" 
-						<?php if ( 1 == get_option('sharify_cache_counts') ) echo 'checked="checked"'; ?> /> Enable Caching? (recommend)</label> <br>
-						<p><strong>Caching Period (in minutes)</strong></p>
-						<input type="text" name="sharify_cache_count_period" value="<?php echo get_option('sharify_cache_count_period'); ?>" />
 					</div>
 
 					<!--Twitter-->
@@ -66,6 +64,8 @@
 						<input type="text" id="color" value="<?php echo get_option('sharify_cpm_twitter'); ?>" name="sharify_cpm_twitter" class="sharify-cp color-picker" />
 						<br /><p class="sharify-version-no"><strong>Twitter Button hover color</strong></p>
 						<input type="text" id="color" value="<?php echo get_option('sharify_cph_twitter'); ?>" name="sharify_cph_twitter" class="sharify-cp color-picker" />
+						<br /><p class="sharify-version-no"><strong>Twitter Via User (with "@")</strong></p>
+						<input type="text" value="<?php echo get_option('sharify_twitter_via'); ?>" name="sharify_twitter_via"/>
 						<br />
 					</div>
 
@@ -99,6 +99,24 @@
 						<input type="text" id="color" value="<?php echo get_option('sharify_cpm_gplus'); ?>" name="sharify_cpm_gplus" class="sharify-cp color-picker" />
 						<br /><p class="sharify-version-no"><strong>Google+ Button hover color</strong></p>
 						<input type="text" id="color" value="<?php echo get_option('sharify_cph_gplus'); ?>" name="sharify_cph_gplus" class="sharify-cp color-picker" />
+					</div>
+
+					<!--WhatsApp-->
+					<br /><div class="sharify-sec-title">WhatsApp</div>
+					<?php wp_nonce_field('update-options'); ?>
+					<?php settings_fields('sharify');?>	
+					<div id="wa" class="sharify-setting-wrap">
+						<br>
+						<em>Please note that the WhatsApp button will only display for mobile devices.</em><br>
+						<br><label><input type="checkbox" class="sharify-input" name="display_button_wa" value="1" 
+						<?php if ( 1 == get_option('display_button_wa') ) echo 'checked="checked"'; ?> /> Display WhatsApp button?</label><br />
+						<br /><label><input type="checkbox" class="sharify-input" name="sharify_wa_btn_size" value="1" 
+						<?php if ( 1 == get_option('sharify_wa_btn_size') ) echo 'checked="checked"'; ?> /> Display small button for WhatsApp?</label><br />
+
+						<p class="sharify-version-no"><strong>WhatsApp Button main color</strong></p>
+						<input type="text" id="color" value="<?php echo get_option('sharify_cpm_wa'); ?>" name="sharify_cpm_wa" class="sharify-cp color-picker" />
+						<br /><p class="sharify-version-no"><strong>WhatsApp Button hover color</strong></p>
+						<input type="text" id="color" value="<?php echo get_option('sharify_cph_wa'); ?>" name="sharify_cph_wa" class="sharify-cp color-picker" />
 					</div>
 
 					<!--LinkedIn-->

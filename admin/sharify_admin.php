@@ -11,7 +11,9 @@ function admin_init_sharify() {
 	register_setting('sharify', 'display_button_pocket');
 	register_setting('sharify', 'display_button_pinterest');
 	register_setting('sharify', 'display_button_vk');
+	register_setting('sharify', 'display_button_wa');
 	register_setting('sharify', 'display_buttons_under_post');
+	register_setting('sharify', 'display_buttons_before_post');
 	register_setting('sharify', 'sharify_twitter_btn_size');
 	register_setting('sharify', 'sharify_facebook_btn_size');
 	register_setting('sharify', 'sharify_gplus_btn_size');
@@ -21,9 +23,8 @@ function admin_init_sharify() {
 	register_setting('sharify', 'sharify_linkedin_btn_size');
 	register_setting('sharify', 'sharify_email_btn_size');
 	register_setting('sharify', 'sharify_vk_btn_size');
+	register_setting('sharify', 'sharify_wa_btn_size');
 	register_setting('sharify', 'sharify_use_gfont');
-	register_setting('sharify', 'sharify_cache_counts');
-	register_setting('sharify', 'sharify_cache_count_period');
 	register_setting('sharify', 'sharify_cpm_twitter');
 	register_setting('sharify', 'sharify_cph_twitter');
 	register_setting('sharify', 'sharify_cpm_fb');
@@ -38,9 +39,12 @@ function admin_init_sharify() {
 	register_setting('sharify', 'sharify_cph_rdt');
 	register_setting('sharify', 'sharify_cpm_vk');
 	register_setting('sharify', 'sharify_cph_vk');
+	register_setting('sharify', 'sharify_cpm_wa');
+	register_setting('sharify', 'sharify_cph_wa');
 	register_setting('sharify', 'sharify_cpm_mail');
 	register_setting('sharify', 'sharify_cph_mail');
 	register_setting('sharify', 'sharify_remove_data');
+	register_setting('sharify', 'sharify_twitter_via');
 }
 
 //Add Options Page
