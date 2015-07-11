@@ -45,32 +45,31 @@ If you've any problems with the plugin or would like to feedback, please <a href
 
 ###Changelog
 
-** 3.4.5 **
+##### 3.4.5
 
 * Tiny bug fixes
 
-** 3.4.4 **
-
+##### 3.4.4 
 * Fixed WhatsApp issue which disables the button.
 
-** 3.4 **
+##### 3.4 
 
 * Added support for HTTPS.  
 
-** 3.3 **
+##### 3.3 
 
 * Added WhatsApp Share button for mobile devices
 * Fixed an issue where Tweet would get cut off if there is characters such as "&"       
 
-** 3.2 **
+##### 3.2 
 
 * Fixed Twitter Mention issue
 
-** 3.1 **
+##### 3.1
 
 * Added the ability to add "via: @user" for Twitter share
 
-** 3.0 **
+##### 3.0 
 
 * Performance Improvements - Much, much faster now
 * Removed Caching - the users' browser now requests share counts, which helps to reduce server load for your site
@@ -79,73 +78,73 @@ If you've any problems with the plugin or would like to feedback, please <a href
 * Sharing count now updates in real-time after user clicks to share a page
 * Few style tweaks
 
-** 2.5 **
+##### 2.5 
 
 * Added support for WordPress 4.2
 
-** 2.4 **
+##### 2.4 
 
 * More bug fixes
 
-** 2.3 **
+##### 2.3 
 
 * Fixed an issue where the counts were same for all posts
 
-** 2.2 **
+##### 2.2 
 
 * Fixed an issue where caching were not being cleared for some users
 * Added the ability to clear cache on the Sharify Settings panel
 
-** 2.1 **
+##### 2.1 
 
 * FIX: Bugs!
 
-** 2.0 **
+##### 2.0 
 
 * NEW: Ability to customize Share Buttons' color!
 * NEW: Added Cache support!
 * NEW: Improved Admin panel!
 * Performance improvements and bug fixes.
 
-** 1.9.4 **
+##### 1.9.4 
 
 * NEW: LinkedIn Share Counts
 * Fixed some bugs!
 
-** 1.9.3 **
+##### 1.9.3 
 
 * Fix: Fixed some bugs.
 * Preparing for the big release, 2.0!
 
-** 1.9.2 **
+##### 1.9.2 
 
 * Fix: An issue where Facebook Share Count won't appear if there is a integer on the permalink (url)
 * Removed: Caching for some issues with Facebook's API. It'll be added with the next major update, I promise. 
 
-** 1.9.1 **
+##### 1.9.1 
 
 * Fixed an issue where the post thumbnail appeared at the top after V1.9
 
-** 1.9 **
+##### 1.9 
 
 * NEW: Ability to change button size
 * NEW: Ability to disable Google Fonts
 * FIX: Fixed any issue where the CSS won't load on anywhere else other than posts
 * FIX: Improved admin panel
 
-** 1.8 **
+##### 1.8 
 
 * NEW: Abiliy to enable/disable caching
 * NEW: Ability to change caching period
 * FIX: Transient API Fixes for caching
 
 
-** 1.7.1 **
+##### 1.7.1 
 
 * SSL Security Fix (thanks Dan14!)
 * Added caching for share counts
 
-** 1.7 **
+##### 1.7 
 
 * I've fully rewritten the plugin to make it more clean, fast and efficient
 * New Design for sharing buttons
@@ -153,13 +152,13 @@ If you've any problems with the plugin or would like to feedback, please <a href
 * New Email Button
 * Better sharing counts
 
-** 1.6 **
+##### 1.6 
 * New VKontakte share button
 * Admin panel bug fixes.
 * CSS Bug Fixes!
 * Fixes for CSS confliction with WordPress Backend
 
-** 1.5 - SWEET **
+##### 1.5 - SWEET 
 
 * New control panel design!
 * Fix for CSS conflict that broke WordPress Default Tabs
@@ -168,26 +167,26 @@ If you've any problems with the plugin or would like to feedback, please <a href
 * Minified CSS, JS for better performance
 * Share count fix for Twitter, Facebook and Google+
 
-** 1.4 **
+##### 1.4 
 
 * Twitter, Facebok, Google+, Reddit, Pocket, LinkedIn, Pinterest buttons fixed!
 
-** 1.3 **
+##### 1.3
 
 * Control Panel - You can now control any buttons you want! (hide or show). More options coming on 1.4!
 * Share Count feature has been optimised for better performace.
 * CSS Fixes
 
-** 1.2 **
+##### 1.2 
 
 * Fixed LinkedIn button issue
 * Changed Facebook Like to Facebook Share
 
-** 1.1 **
+##### 1.1 
 
 * Fixed bugs
 * Performance Improvements
 
-** 1.0 **
+##### 1.0 
 
 * Initial Release
