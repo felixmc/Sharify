@@ -189,7 +189,7 @@ function sharify_display_button_buttons($sharify_buttons = "")
 								<a title="Tweet on Twitter" href="https://twitter.com/intent/tweet?text='.$sharify_post_title.': '.get_permalink(). $sharify_twitter_mention . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;">
 									<span class="sharify-icon"><i class="sharify sharify-twitter"></i></span>
 									<span class="sharify-title">Tweet</span>
-									<span class="sharify-count" id="twitter" data-url="'.get_permalink().'" data-text="'.get_the_title().'" >0</span>
+									<span class="sharify-count twitter" data-url="'.get_permalink().'" data-text="'.get_the_title().'" >0</span>
 								</a>
 							</li>';
 	if ( 1 == get_option('display_button_facebook') ) 
@@ -197,7 +197,7 @@ function sharify_display_button_buttons($sharify_buttons = "")
 								<a title="Share on Facebook" href="http://www.facebook.com/sharer.php?u=' . urlencode(get_permalink()) . '" onclick="window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;">
 									<span class="sharify-icon"><i class="sharify sharify-facebook"></i></span>
 									<span class="sharify-title">Share</span>
-									<span class="sharify-count" id="facebook" data-url="'.get_permalink().'" data-text="'.get_the_title().' - " >0</span>
+									<span class="sharify-count facebook" data-url="'.get_permalink().'" data-text="'.get_the_title().' - " >0</span>
 								</a>
 							</li>';
 	if ( 1 == get_option('display_button_google') ) 
@@ -240,7 +240,7 @@ function sharify_display_button_buttons($sharify_buttons = "")
 								<a title="Share on Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=' . get_permalink() . '&title='. get_the_title() .'" onclick="if(!document.getElementById(\'td_social_networks_buttons\')){window.open(this.href, \'mywin\',\'left=50,top=50,width=600,height=350,toolbar=0\'); return false;}" >
 									<span class="sharify-icon"><i class="sharify sharify-linkedin"></i></span>
 									<span class="sharify-title">LinkedIn</span>
-									<span class="sharify-count" id="linkedin" data-url="'.get_permalink().'" data-text="'.get_the_title().' - " >0</span>
+									<span class="sharify-count linkedin" data-url="'.get_permalink().'" data-text="'.get_the_title().' - " >0</span>
 								</a>
 							</li>';
 	if ( 1 == get_option('display_button_email') ) 
